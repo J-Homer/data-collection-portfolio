@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Data Collection Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { color: #ff4500; margin-bottom: 10px; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center; }
+        .stat-number { font-size: 2em; font-weight: bold; color: #ff4500; }
+        .stat-label { color: #6c757d; margin-top: 5px; }
+        .post-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 20px; }
+        .post-card { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .post-title { font-weight: bold; font-size: 1.1em; color: #212529; margin-bottom: 10px; }
+        .post-detail { margin: 5px 0; color: #495057; }
+        .subreddit-name { color: #ff4500; font-weight: bold; }
+        .score { background: #ff4500; color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.9em; }
+        .high-score { background: #28a745; }
+        .metrics { background: #f8f9fa; padding: 10px; border-radius: 4px; margin-top: 10px; }
+        .metric { display: inline-block; margin-right: 15px; }
+        .footer { text-align: center; margin-top: 30px; color: #6c757d; font-size: 0.9em; }
+        .post-content { background: #f8f9fa; padding: 10px; border-radius: 4px; margin-top: 10px; font-size: 0.9em; max-height: 100px; overflow: hidden; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔴 Reddit Data Collection Report</h1>
+            <p>Community discussions and engagement data organized for your evaluation</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">20</div>
+                <div class="stat-label">Total Posts</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4,396</div>
+                <div class="stat-label">Total Score</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3,296</div>
+                <div class="stat-label">Total Comments</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Subreddits</div>
+            </div>
+        </div>
+        
+        <div class="post-grid">
+
+            <div class="post-card">
+                <div class="post-title">Just started a FT job after 7 years of running a small business... and I just feel relieved</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/smallbusiness</span></div>
+                <div class="post-detail">👤 Author: u/pizzapriorities</div>
+                <div class="post-detail">📅 Posted: 2025-02-27 08:52:03</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score high-score">606</span> points</div>
+                    <div class="metric">💬 89 comments</div>
+                    <div class="metric">📊 99% upvoted</div>
+                </div>
+                <div class="post-content">Posting this for anyone else who may be in a similar situation.
+
+I just started a full-time job at a larger (>1500 employee) business after seven year...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">Small business owners in your forties, how are you all doing?</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/smallbusiness</span></div>
+                <div class="post-detail">👤 Author: u/pizzapriorities</div>
+                <div class="post-detail">📅 Posted: 2024-11-09 18:55:07</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score high-score">178</span> points</div>
+                    <div class="metric">💬 248 comments</div>
+                    <div class="metric">📊 96% upvoted</div>
+                </div>
+                <div class="post-content">43 year old dude here. I run a small marketing agency.
+
+So here's where I'm at:  
+1. As I'm getting older, I'm less excited about work taking up my wh...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">I’ve made 50k in last two months of my small business. What’s next?</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/smallbusiness</span></div>
+                <div class="post-detail">👤 Author: u/Spepmo</div>
+                <div class="post-detail">📅 Posted: 2025-03-06 20:21:15</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score high-score">261</span> points</div>
+                    <div class="metric">💬 120 comments</div>
+                    <div class="metric">📊 91% upvoted</div>
+                </div>
+                <div class="post-content">The headline is more for attention, but it’s true. 52k gross profit. 26k net. I started a small maintenance and repair business and went full time Nov...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">Promote your business, week of July 8, 2024</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/smallbusiness</span></div>
+                <div class="post-detail">👤 Author: u/Charice</div>
+                <div class="post-detail">📅 Posted: 2024-07-07 22:38:42</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score ">42</span> points</div>
+                    <div class="metric">💬 250 comments</div>
+                    <div class="metric">📊 96% upvoted</div>
+                </div>
+                <div class="post-content">Post business promotion messages here including special offers especially if you cater to small business.  
+
+**Be considerate. Make your message conci...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">Promote your business, week of July 1, 2024</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/smallbusiness</span></div>
+                <div class="post-detail">👤 Author: u/Charice</div>
+                <div class="post-detail">📅 Posted: 2024-06-30 22:31:52</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score ">41</span> points</div>
+                    <div class="metric">💬 252 comments</div>
+                    <div class="metric">📊 96% upvoted</div>
+                </div>
+                <div class="post-content">Post business promotion messages here including special offers especially if you cater to small business.  
+
+**Be considerate. Make your message conci...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">Promote your business, week of August 26, 2024</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/smallbusiness</span></div>
+                <div class="post-detail">👤 Author: u/Charice</div>
+                <div class="post-detail">📅 Posted: 2024-08-25 22:30:34</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score ">57</span> points</div>
+                    <div class="metric">💬 182 comments</div>
+                    <div class="metric">📊 95% upvoted</div>
+                </div>
+                <div class="post-content">Post business promotion messages here including special offers especially if you cater to small business.  
+
+**Be considerate. Make your message conci...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">Promote your business, week of July 29, 2024</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/smallbusiness</span></div>
+                <div class="post-detail">👤 Author: u/Charice</div>
+                <div class="post-detail">📅 Posted: 2024-07-28 22:06:34</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score ">32</span> points</div>
+                    <div class="metric">💬 217 comments</div>
+                    <div class="metric">📊 100% upvoted</div>
+                </div>
+                <div class="post-content">Post business promotion messages here including special offers especially if you cater to small business.  
+
+**Be considerate. Make your message conci...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">Promote your business, week of December 2, 2024</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/smallbusiness</span></div>
+                <div class="post-detail">👤 Author: u/Charice</div>
+                <div class="post-detail">📅 Posted: 2024-12-01 21:20:08</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score ">23</span> points</div>
+                    <div class="metric">💬 150 comments</div>
+                    <div class="metric">📊 100% upvoted</div>
+                </div>
+                <div class="post-content">Post business promotion messages here including special offers especially if you cater to small business.  
+
+**Be considerate. Make your message conci...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">Promote your business, week of October 21, 2024</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/smallbusiness</span></div>
+                <div class="post-detail">👤 Author: u/Charice</div>
+                <div class="post-detail">📅 Posted: 2024-10-20 22:15:26</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score ">27</span> points</div>
+                    <div class="metric">💬 169 comments</div>
+                    <div class="metric">📊 97% upvoted</div>
+                </div>
+                <div class="post-content">Post business promotion messages here including special offers especially if you cater to small business.  
+
+**Be considerate. Make your message conci...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">Promote your business, week of August 5, 2024</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/smallbusiness</span></div>
+                <div class="post-detail">👤 Author: u/Charice</div>
+                <div class="post-detail">📅 Posted: 2024-08-04 22:48:18</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score ">34</span> points</div>
+                    <div class="metric">💬 196 comments</div>
+                    <div class="metric">📊 97% upvoted</div>
+                </div>
+                <div class="post-content">Post business promotion messages here including special offers especially if you cater to small business.  
+
+**Be considerate. Make your message conci...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">Is vending machine business still worth it? (2024)</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/entrepreneur</span></div>
+                <div class="post-detail">👤 Author: u/Key-Anxiety8451</div>
+                <div class="post-detail">📅 Posted: 2024-07-21 00:34:51</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score high-score">120</span> points</div>
+                    <div class="metric">💬 179 comments</div>
+                    <div class="metric">📊 88% upvoted</div>
+                </div>
+                <div class="post-content">I always wanted to be an entrepreneur. I want to be included in many projects in the future such as real estate and businesses. Im hoping start off sm...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">How I went from $27 to $3K as a solopreneur still in a 9-5</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/entrepreneur</span></div>
+                <div class="post-detail">👤 Author: u/jottrled</div>
+                <div class="post-detail">📅 Posted: 2024-10-14 16:03:40</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score high-score">998</span> points</div>
+                    <div class="metric">💬 280 comments</div>
+                    <div class="metric">📊 93% upvoted</div>
+                </div>
+                <div class="post-content">My journey started back in November 2023.
+
+I was scrolling through Twitter and YouTube and saw a word that I had never come across before. Solopreneur...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">I run a photo booth rental business that generates $400k annually. AMA</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/entrepreneur</span></div>
+                <div class="post-detail">👤 Author: u/maydaybutton</div>
+                <div class="post-detail">📅 Posted: 2023-11-27 15:32:26</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score high-score">1061</span> points</div>
+                    <div class="metric">💬 540 comments</div>
+                    <div class="metric">📊 94% upvoted</div>
+                </div>
+                <div class="post-content">Been in the photo booth industry for nearly 10 years and will finish the year at \~$400k in gross revenue (set to do over half a mil by 2024) in the w...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">Need help scaling my small semi-online business</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/entrepreneur</span></div>
+                <div class="post-detail">👤 Author: u/ElitePotato06</div>
+                <div class="post-detail">📅 Posted: 2025-01-15 09:27:36</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score ">3</span> points</div>
+                    <div class="metric">💬 9 comments</div>
+                    <div class="metric">📊 72% upvoted</div>
+                </div>
+                <div class="post-content">I have a very small online business in which I started in November 2024. I sell made to order, customised watches. In the last month I’ve sold about £...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">LA Housing Discrimination Destroys Small Business, why?</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/entrepreneur</span></div>
+                <div class="post-detail">👤 Author: u/RiaBromley</div>
+                <div class="post-detail">📅 Posted: 2025-01-04 10:32:15</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score ">0</span> points</div>
+                    <div class="metric">💬 2 comments</div>
+                    <div class="metric">📊 50% upvoted</div>
+                </div>
+                <div class="post-content">Hello  I’m a 32 year old black (from nigerian immigrant parents) entrepreneur in Los Angeles & I’m still learning a lot about the business world. I ra...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">Is it a dumb idea in 2024 to start a small business making guitars from my shed in the garden?</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/entrepreneur</span></div>
+                <div class="post-detail">👤 Author: u/TouchMySwollenFace</div>
+                <div class="post-detail">📅 Posted: 2023-12-18 19:05:34</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score ">11</span> points</div>
+                    <div class="metric">💬 27 comments</div>
+                    <div class="metric">📊 87% upvoted</div>
+                </div>
+                <div class="post-content">I’ve made a couple before and it gives me pleasure doing it. I was just wondering if this was something I could turn into a business. Thanks.</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">giving up on life</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/entrepreneur</span></div>
+                <div class="post-detail">👤 Author: u/aj_216</div>
+                <div class="post-detail">📅 Posted: 2025-02-16 23:15:59</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score high-score">303</span> points</div>
+                    <div class="metric">💬 224 comments</div>
+                    <div class="metric">📊 94% upvoted</div>
+                </div>
+                <div class="post-content">I’m a 28-year-old single male. I grew up in a small midwestern town, went to college there, and had a job lined up at a Fortune 500 tech company after...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">I failed 7 businesses. The 8th seems to be working.</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/entrepreneur</span></div>
+                <div class="post-detail">👤 Author: u/Opening_Call_1711</div>
+                <div class="post-detail">📅 Posted: 2024-12-09 12:58:56</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score high-score">594</span> points</div>
+                    <div class="metric">💬 150 comments</div>
+                    <div class="metric">📊 91% upvoted</div>
+                </div>
+                <div class="post-content">Hope this post reaches the right people.
+
+24 year old here. I've tried it all. Dropshipping, affiliates, TikTok, Instagram, YouTube channel, Pinterest...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">What are the common struggles of a small business in 2024?</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/entrepreneur</span></div>
+                <div class="post-detail">👤 Author: u/No-Catch-5478</div>
+                <div class="post-detail">📅 Posted: 2024-03-08 00:14:55</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score ">1</span> points</div>
+                    <div class="metric">💬 7 comments</div>
+                    <div class="metric">📊 56% upvoted</div>
+                </div>
+                <div class="post-content">I want to create an article for my blog and I want to get a first-hand information from small entrepreneurs. I understand that it's hard to keep up no...</div>
+            </div>
+
+            <div class="post-card">
+                <div class="post-title">Execute on an app for small local businesses?</div>
+                <div class="post-detail">📍 Subreddit: <span class="subreddit-name">r/entrepreneur</span></div>
+                <div class="post-detail">👤 Author: u/Cyrillite</div>
+                <div class="post-detail">📅 Posted: 2024-01-02 06:33:10</div>
+                <div class="metrics">
+                    <div class="metric">⬆️ <span class="score ">4</span> points</div>
+                    <div class="metric">💬 5 comments</div>
+                    <div class="metric">📊 75% upvoted</div>
+                </div>
+                <div class="post-content">It’s 2024 and I want to learn to code. I have a simple, practical idea: I want to make a loyalty card app for my local (UK) coffee shop that still use...</div>
+            </div>
+
+        </div>
+        
+        <div class="footer">
+            <p>Report generated on August 19, 2025 at 12:07 AM</p>
+            <p>Reddit community data collected and organized for your evaluation</p>
+        </div>
+    </div>
+</body>
+</html>
