@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Directory Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { color: #366092; margin-bottom: 8px; }
+        .meta { color: #6c757d; font-size: 0.9em; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 24px 0 32px; }
+        .stat-card { background: #f8f9fa; padding: 18px; border-radius: 8px; text-align: center; border: 1px solid #eee; }
+        .stat-number { font-size: 1.8em; font-weight: bold; color: #366092; }
+        .stat-label { color: #6c757d; margin-top: 6px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+        .card { background: white; border: 1px solid #e7e7e7; border-radius: 8px; padding: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .biz-name { font-weight: bold; font-size: 1.05em; color: #212529; margin-bottom: 6px; }
+        .detail { color: #495057; margin: 4px 0; }
+        .rating { color: #f39c12; font-weight: 600; }
+        .footer { text-align: center; color: #6c757d; font-size: 0.9em; margin-top: 28px; }
+        a.link { color: #366092; text-decoration: none; }
+        a.link:hover { text-decoration: underline; }
+        .pill { display: inline-block; background: #eef3f8; color: #366092; padding: 2px 8px; border-radius: 999px; font-size: 0.85em; margin-left: 6px; }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>🏢 Business Directory Report</h1>
+                <div class="meta">Sources: Google Places • Collected At: August 20, 2025 at 12:27 AM</div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Total Businesses</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4.4/5.0</div>
+                    <div class="stat-label">Average Rating</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Unique Categories</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Sources</div>
+                </div>
+            </div>
+
+            <div class="grid">
+
+                <div class="card">
+                    <div class="biz-name">Corner Restaurant<span class="pill">Restaurants</span></div>
+                    <div class="detail">📍 110 E 2nd St, Austin, TX 78701, USA</div>
+                    <div class="detail">📞 (512) 608-4488</div>
+                    <div class="detail rating">★★★★ (4.9) • 16,537 reviews</div>
+                    <div class="detail">🔗 <a class="link" href="https://www.cornerrestaurantaustin.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing" target="_blank" rel="noopener">Website</a></div>
+                    <div class="detail meta">Source: Google Places</div>
+                </div>
+                                
+                <div class="card">
+                    <div class="biz-name">Casino El Camino<span class="pill">Restaurants</span></div>
+                    <div class="detail">📍 517 E 6th St, Austin, TX 78701, USA</div>
+                    <div class="detail">📞 (512) 469-9330</div>
+                    <div class="detail rating">★★★★ (4.5) • 4,153 reviews</div>
+                    <div class="detail">🔗 <a class="link" href="http://www.casinoelcamino.net/" target="_blank" rel="noopener">Website</a></div>
+                    <div class="detail meta">Source: Google Places</div>
+                </div>
+                                
+                <div class="card">
+                    <div class="biz-name">Las Cazuelas Méxican Restaurant Atx<span class="pill">Restaurants</span></div>
+                    <div class="detail">📍 1701 E Cesar Chavez St Suite A, Austin, TX 78702, USA</div>
+                    <div class="detail">📞 (512) 479-7911</div>
+                    <div class="detail rating">★★★ (3.8) • 1,372 reviews</div>
+                    <div class="detail">🔗 <a class="link" href="https://www.lascazuelasaustin.com/%20(https://www.lascazuelasaustin.com/)" target="_blank" rel="noopener">Website</a></div>
+                    <div class="detail meta">Source: Google Places</div>
+                </div>
+                                
+                <div class="card">
+                    <div class="biz-name">Yard House<span class="pill">Restaurants</span></div>
+                    <div class="detail">📍 11800 Domain Blvd Suite 700, Austin, TX 78758, USA</div>
+                    <div class="detail">📞 (512) 836-0174</div>
+                    <div class="detail rating">★★★★ (4.4) • 5,574 reviews</div>
+                    <div class="detail">🔗 <a class="link" href="https://www.yardhouse.com/locations/tx/austin/austin-domain-northside/8366?cmpid=br:yh_ag:ie_ch:loc_ca:YHGMB_sn:gmb_gt:austin-tx-8366_pl:locurl_rd:1062" target="_blank" rel="noopener">Website</a></div>
+                    <div class="detail meta">Source: Google Places</div>
+                </div>
+                                
+                <div class="card">
+                    <div class="biz-name">PD Thai Restaurant<span class="pill">Restaurants</span></div>
+                    <div class="detail">📍 3208 Guadalupe St #2329, Austin, TX 78705, USA</div>
+                    <div class="detail">📞 (512) 371-8777</div>
+                    <div class="detail rating">★★★★ (4.3) • 497 reviews</div>
+                    <div class="detail">🔗 <a class="link" href="https://pdthairestaurant.com/?utm_source=google" target="_blank" rel="noopener">Website</a></div>
+                    <div class="detail meta">Source: Google Places</div>
+                </div>
+                                
+            </div>
+            <div class="footer">This report organizes public business data for evaluation purposes.</div>
+        </div>
+    </body>
+ </html>
+                        

@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Data Collection Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { color: #c4302b; margin-bottom: 10px; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center; }
+        .stat-number { font-size: 2em; font-weight: bold; color: #c4302b; }
+        .stat-label { color: #6c757d; margin-top: 5px; }
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
+        .video-card { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .video-title { font-weight: bold; font-size: 1.1em; color: #212529; margin-bottom: 10px; }
+        .video-detail { margin: 5px 0; color: #495057; }
+        .channel-name { color: #c4302b; font-weight: bold; }
+        .metrics { background: #f8f9fa; padding: 10px; border-radius: 4px; margin-top: 10px; }
+        .metric { display: inline-block; margin-right: 15px; }
+        .footer { text-align: center; margin-top: 30px; color: #6c757d; font-size: 0.9em; }
+        .meta { color: #6c757d; font-size: 0.85em; margin-top: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📺 YouTube Data Collection Report</h1>
+            <p>Video content metrics organized for your evaluation</p>
+            <p class="meta">Source: YouTube API • Collected At: August 20, 2025 at 12:27 AM</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Total Videos</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5,757,277</div>
+                <div class="stat-label">Total Views</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">71,296</div>
+                <div class="stat-label">Total Likes</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">1,151,455</div>
+                <div class="stat-label">Avg Views/Video</div>
+            </div>
+        </div>
+        
+        <div class="video-grid">
+
+            <div class="video-card">
+                <div class="video-title">Best Advice to Small Business Owners</div>
+                <div class="video-detail">📺 Channel: <span class="channel-name">Goldman Sachs</span></div>
+                <div class="video-detail">📅 Published: 2016-06-10T18:42:26Z</div>
+                <div class="video-detail">⏱️ Duration: PT3M26S</div>
+                <div class="metrics">
+                    <div class="metric">👁️ 2,301,842 views</div>
+                    <div class="metric">👍 0 likes</div>
+                    <div class="metric">💬 0 comments</div>
+                </div>
+                <div class="meta">Source: YouTube API • Collected At: August 20, 2025 at 12:27 AM</div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-title">17 Tips to Run a Small Business & PREVENT Business Failure</div>
+                <div class="video-detail">📺 Channel: <span class="channel-name">Young Entrepreneurs Forum</span></div>
+                <div class="video-detail">📅 Published: 2016-10-09T15:59:15Z</div>
+                <div class="video-detail">⏱️ Duration: PT4M26S</div>
+                <div class="metrics">
+                    <div class="metric">👁️ 399,897 views</div>
+                    <div class="metric">👍 6,053 likes</div>
+                    <div class="metric">💬 88 comments</div>
+                </div>
+                <div class="meta">Source: YouTube API • Collected At: August 20, 2025 at 12:27 AM</div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-title">6 Tips on Being a Successful Entrepreneur | John Mullins | TED</div>
+                <div class="video-detail">📺 Channel: <span class="channel-name">TED</span></div>
+                <div class="video-detail">📅 Published: 2024-02-09T19:47:43Z</div>
+                <div class="video-detail">⏱️ Duration: PT15M20S</div>
+                <div class="metrics">
+                    <div class="metric">👁️ 2,783,403 views</div>
+                    <div class="metric">👍 53,772 likes</div>
+                    <div class="metric">💬 836 comments</div>
+                </div>
+                <div class="meta">Source: YouTube API • Collected At: August 20, 2025 at 12:27 AM</div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-title">Tips For Starting Your Business | Small Business Tips For Beginners, Avoid Making These Mistakes!</div>
+                <div class="video-detail">📺 Channel: <span class="channel-name">Noeli Creates</span></div>
+                <div class="video-detail">📅 Published: 2025-01-04T03:13:35Z</div>
+                <div class="video-detail">⏱️ Duration: PT11M43S</div>
+                <div class="metrics">
+                    <div class="metric">👁️ 214,227 views</div>
+                    <div class="metric">👍 8,384 likes</div>
+                    <div class="metric">💬 273 comments</div>
+                </div>
+                <div class="meta">Source: YouTube API • Collected At: August 20, 2025 at 12:27 AM</div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-title">10 TIPS FOR STARTING YOUR OWN SMALL BUSINESS ✿ things I wish I knew before starting mine!</div>
+                <div class="video-detail">📺 Channel: <span class="channel-name">Prints by Milly</span></div>
+                <div class="video-detail">📅 Published: 2024-01-15T13:26:47Z</div>
+                <div class="video-detail">⏱️ Duration: PT21M18S</div>
+                <div class="metrics">
+                    <div class="metric">👁️ 57,908 views</div>
+                    <div class="metric">👍 3,087 likes</div>
+                    <div class="metric">💬 108 comments</div>
+                </div>
+                <div class="meta">Source: YouTube API • Collected At: August 20, 2025 at 12:27 AM</div>
+            </div>
+
+        </div>
+        
+        <div class="footer">
+            <p>Report generated on August 20, 2025 at 12:27 AM</p>
+            <p>YouTube content data collected and organized for your evaluation</p>
+        </div>
+    </div>
+</body>
+</html>

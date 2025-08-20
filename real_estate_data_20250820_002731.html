@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Data Collection Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { color: #2c3e50; margin-bottom: 10px; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: #ecf0f1; padding: 20px; border-radius: 8px; text-align: center; }
+        .stat-number { font-size: 2em; font-weight: bold; color: #27ae60; }
+        .stat-label { color: #7f8c8d; margin-top: 5px; }
+        .property-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
+        .property-card { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .property-address { font-weight: bold; font-size: 1.2em; color: #2c3e50; margin-bottom: 10px; }
+        .property-detail { margin: 5px 0; color: #34495e; }
+        .price { background: #27ae60; color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.9em; }
+        .high-price { background: #e74c3c; }
+        .features { background: #f8f9fa; padding: 10px; border-radius: 4px; margin-top: 10px; }
+        .feature { display: inline-block; margin-right: 15px; }
+        .footer { text-align: center; margin-top: 30px; color: #7f8c8d; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏠 Real Estate Data Collection Report</h1>
+            <p>Property information organized for your evaluation</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">41</div>
+                <div class="stat-label">Total Properties</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">$1,880,625</div>
+                <div class="stat-label">Average Price</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">27</div>
+                <div class="stat-label">Neighborhoods</div>
+            </div>
+        </div>
+        
+        <div class="property-grid">
+
+            <div class="property-card">
+                <div class="property-address">1911 Ohlen Rd, Austin, TX 78757</div>
+                <div class="property-detail">💰 <span class="price ">$949,990</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Wooten</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 3 baths</div>
+                    <div class="feature">📐 1632 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">102 W Fawnridge Dr, Austin, TX 78753</div>
+                <div class="property-detail">💰 <span class="price ">$560,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Georgian Acres</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 3 baths</div>
+                    <div class="feature">📐 1752 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">710 Colorado St APT 7J, Austin, TX 78701</div>
+                <div class="property-detail">💰 <span class="price ">$650,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Downtown Austin</div>
+                <div class="features">
+                    <div class="feature">🛏️ 2 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1287 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">12725 Bloomington Dr #129, Austin, TX 78748</div>
+                <div class="property-detail">💰 <span class="price ">$268,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Neighborhood not specified</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1350 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">6220 Andes Peak Trl, Austin, TX 78747</div>
+                <div class="property-detail">💰 <span class="price ">$445,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Neighborhood not specified</div>
+                <div class="features">
+                    <div class="feature">🛏️ 4 beds</div>
+                    <div class="feature">🚿 3 baths</div>
+                    <div class="feature">📐 2311 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">12821 Park Dr, Austin, TX 78732</div>
+                <div class="property-detail">💰 <span class="price high-price">$13,900,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Steiner Ranch Neighborhood Association</div>
+                <div class="features">
+                    <div class="feature">🛏️ 6 beds</div>
+                    <div class="feature">🚿 13 baths</div>
+                    <div class="feature">📐 15394 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">3709 Windsor Rd, Austin, TX 78703</div>
+                <div class="property-detail">💰 <span class="price high-price">$2,900,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 West Austin Ng</div>
+                <div class="features">
+                    <div class="feature">🛏️ 5 beds</div>
+                    <div class="feature">🚿 5 baths</div>
+                    <div class="feature">📐 3555 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">3411 Cactus Wren Way, Austin, TX 78746</div>
+                <div class="property-detail">💰 <span class="price ">$1,550,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Woodhaven</div>
+                <div class="features">
+                    <div class="feature">🛏️ 4 beds</div>
+                    <div class="feature">🚿 3 baths</div>
+                    <div class="feature">📐 2352 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">10101 Dobbin Dr, Austin, TX 78748</div>
+                <div class="property-detail">💰 <span class="price ">$699,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Palamino Park</div>
+                <div class="features">
+                    <div class="feature">🛏️ 5 beds</div>
+                    <div class="feature">🚿 3 baths</div>
+                    <div class="feature">📐 2003 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">4435 Stony Meadow Ln, Austin, TX 78731</div>
+                <div class="property-detail">💰 <span class="price ">$879,900</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Bull Creek</div>
+                <div class="features">
+                    <div class="feature">🛏️ 4 beds</div>
+                    <div class="feature">🚿 3 baths</div>
+                    <div class="feature">📐 2233 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">6607 W Courtyard Dr, Austin, TX 78730</div>
+                <div class="property-detail">💰 <span class="price high-price">$9,998,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Mansfield-River Place</div>
+                <div class="features">
+                    <div class="feature">🛏️ 5 beds</div>
+                    <div class="feature">🚿 6 baths</div>
+                    <div class="feature">📐 5780 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">6123 Blue Stem Trl, Austin, TX 78735</div>
+                <div class="property-detail">💰 <span class="price ">$75,900</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 West Oak Hill</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1216 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">2106 Morley Dr #141, Austin, TX 78752</div>
+                <div class="property-detail">💰 <span class="price ">$209,900</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Coronado Hills</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 3 baths</div>
+                    <div class="feature">📐 1484 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">12004 Verchota Dr, Austin, TX 78748</div>
+                <div class="property-detail">💰 <span class="price ">$395,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Rancho Alto</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1753 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">16437 Along Creek Cv, Austin, TX 78717</div>
+                <div class="property-detail">💰 <span class="price ">$975,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Avery Ranch Parkside</div>
+                <div class="features">
+                    <div class="feature">🛏️ 6 beds</div>
+                    <div class="feature">🚿 4 baths</div>
+                    <div class="feature">📐 3765 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">712 Graham Pl APT 302, Austin, TX 78705</div>
+                <div class="property-detail">💰 <span class="price ">$299,900</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Central Austin</div>
+                <div class="features">
+                    <div class="feature">🛏️ 2 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 751 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">9005 Quail Creek Dr, Austin, TX 78758</div>
+                <div class="property-detail">💰 <span class="price ">$549,900</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 North Austin Civic Association</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1908 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">6908 Thistle Hill Way, Austin, TX 78754</div>
+                <div class="property-detail">💰 <span class="price ">$339,900</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Harris Branch</div>
+                <div class="features">
+                    <div class="feature">🛏️ 4 beds</div>
+                    <div class="feature">🚿 3 baths</div>
+                    <div class="feature">📐 2490 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">301 West Ave #2105, Austin, TX 78701</div>
+                <div class="property-detail">💰 <span class="price ">$938,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Downtown Austin</div>
+                <div class="features">
+                    <div class="feature">🛏️ 2 beds</div>
+                    <div class="feature">🚿 1 baths</div>
+                    <div class="feature">📐 1001 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">605 Silver Wing Dr, Austin, TX 78725</div>
+                <div class="property-detail">💰 <span class="price ">$339,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Neighborhood not specified</div>
+                <div class="features">
+                    <div class="feature">🛏️ 4 beds</div>
+                    <div class="feature">🚿 3 baths</div>
+                    <div class="feature">📐 2570 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">710 Colorado St APT 2A, Austin, TX 78701</div>
+                <div class="property-detail">💰 <span class="price ">$344,888</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Downtown Austin</div>
+                <div class="features">
+                    <div class="feature">🛏️ 1 beds</div>
+                    <div class="feature">🚿 1 baths</div>
+                    <div class="feature">📐 849 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">2201 Garden St, Austin, TX 78702</div>
+                <div class="property-detail">💰 <span class="price ">$1,850,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Holly</div>
+                <div class="features">
+                    <div class="feature">🛏️ 4 beds</div>
+                    <div class="feature">🚿 4 baths</div>
+                    <div class="feature">📐 2014 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">2503 Lakehurst Dr, Austin, TX 78744</div>
+                <div class="property-detail">💰 <span class="price ">$280,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Bluff Springs</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1200 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">200 Congress Ave UNIT 13A, Austin, TX 78701</div>
+                <div class="property-detail">💰 <span class="price ">$1,095,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Downtown Austin</div>
+                <div class="features">
+                    <div class="feature">🛏️ 1 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1225 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">7414 Dallas Dr, Austin, TX 78729</div>
+                <div class="property-detail">💰 <span class="price ">$425,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Rattan Creek</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1497 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">2601 Clear Cv, Austin, TX 78704</div>
+                <div class="property-detail">💰 <span class="price ">$1,100,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Barton Hills</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1862 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">1420 Yorkshire Dr, Austin, TX 78723</div>
+                <div class="property-detail">💰 <span class="price ">$524,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Windsor Park</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1384 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">15212 Shell Bark Cv, Austin, TX 78724</div>
+                <div class="property-detail">💰 <span class="price ">$315,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Neighborhood not specified</div>
+                <div class="features">
+                    <div class="feature">🛏️ 4 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 2047 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">12318 Danny Dr, Austin, TX 78759</div>
+                <div class="property-detail">💰 <span class="price ">$450,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 McNeil</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1503 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">4605 Glissman Rd, Austin, TX 78702</div>
+                <div class="property-detail">💰 <span class="price ">$590,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Govalle</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 1 baths</div>
+                    <div class="feature">📐 1370 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">3823 Threadgill St, Austin, TX 78723</div>
+                <div class="property-detail">💰 <span class="price ">$330,364</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Mueller Tower District</div>
+                <div class="features">
+                    <div class="feature">🛏️ 2 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1124 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">1017 Cripple Creek Dr, Austin, TX 78758</div>
+                <div class="property-detail">💰 <span class="price ">$324,500</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 North Austin Civic Association</div>
+                <div class="features">
+                    <div class="feature">🛏️ 4 beds</div>
+                    <div class="feature">🚿 3 baths</div>
+                    <div class="feature">📐 2090 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">4705 & 4709 Island Cv, Austin, TX 78731</div>
+                <div class="property-detail">💰 <span class="price high-price">$19,000,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Highland Park</div>
+                <div class="features">
+                    <div class="feature">🛏️ 5 beds</div>
+                    <div class="feature">🚿 6 baths</div>
+                    <div class="feature">📐 10227 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">11509 Murcia Dr, Austin, TX 78759</div>
+                <div class="property-detail">💰 <span class="price ">$485,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 McNeil</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1615 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">13451 Bullick Hollow Rd, Austin, TX 78726</div>
+                <div class="property-detail">💰 <span class="price ">$948,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Four Points</div>
+                <div class="features">
+                    <div class="feature">🛏️ 4 beds</div>
+                    <div class="feature">🚿 6 baths</div>
+                    <div class="feature">📐 5473 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">12861 Hughes Park Rd, Austin, TX 78732</div>
+                <div class="property-detail">💰 <span class="price high-price">$6,500,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Steiner Ranch Neighborhood Association</div>
+                <div class="features">
+                    <div class="feature">🛏️ 6 beds</div>
+                    <div class="feature">🚿 7 baths</div>
+                    <div class="feature">📐 13127 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">2612 W 12th St UNIT 1, Austin, TX 78703</div>
+                <div class="property-detail">💰 <span class="price ">$998,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 West Austin Ng</div>
+                <div class="features">
+                    <div class="feature">🛏️ 3 beds</div>
+                    <div class="feature">🚿 2 baths</div>
+                    <div class="feature">📐 1468 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">5604 Hudson Bend Rd, Austin, TX 78734</div>
+                <div class="property-detail">💰 <span class="price ">$525,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Neighborhood not specified</div>
+                <div class="features">
+                    <div class="feature">🛏️ 4 beds</div>
+                    <div class="feature">🚿 3 baths</div>
+                    <div class="feature">📐 2048 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">6901 Davenport Divide Rd, Austin, TX 78738</div>
+                <div class="property-detail">💰 <span class="price ">$1,699,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Neighborhood not specified</div>
+                <div class="features">
+                    <div class="feature">🛏️ 5 beds</div>
+                    <div class="feature">🚿 6 baths</div>
+                    <div class="feature">📐 5444 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">4402 Authentic Dr #69, Austin, TX 78731</div>
+                <div class="property-detail">💰 <span class="price ">$949,500</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Rosedale</div>
+                <div class="features">
+                    <div class="feature">🛏️ 4 beds</div>
+                    <div class="feature">🚿 4 baths</div>
+                    <div class="feature">📐 2178 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-address">4503 Highland Ter, Austin, TX 78731</div>
+                <div class="property-detail">💰 <span class="price ">$1,450,000</span></div>
+                <div class="property-detail">🏠 N/A</div>
+                <div class="property-detail">📍 Rosedale</div>
+                <div class="features">
+                    <div class="feature">🛏️ 4 beds</div>
+                    <div class="feature">🚿 5 baths</div>
+                    <div class="feature">📐 2580 sq ft</div>
+                </div>
+                
+                <div class="property-detail">📞 N/A</div>
+            </div>
+
+        </div>
+        
+        <div class="footer">
+            <p>Report generated on August 20, 2025 at 12:30 AM</p>
+            <p>Real estate data collected and organized for your evaluation and decision-making</p>
+        </div>
+    </div>
+</body>
+</html>
