@@ -28,31 +28,6 @@ Crosstabs/charts on all platforms; native PivotTables + slicers on Windows
 
 - Quality check and handoff with a brief usage note
 
-**Packages and Pricing**
-
-**Starter — $149**
-Up to 40 records • 1 city • up to 2 sources (Google Places/Yelp) OR one YouTube/Reddit/Real Estate dataset
-Excel + CSV + HTML • 24–48h • 1 revision (format/filters/labels)
-
-**Standard — $249**
-75 records • up to 2 cities or 1 city + 10–15mi radius • up to 3 sources
-Excel with per-source tabs + HTML summary • 24–48h • 1 revision
-
-**Pro — $399**
-120 records • up to 3 cities • up to 4 sources
-Multi-sheet Excel + HTML report • ~48h • 1 revision
-
-**Add-ons**
-- Rush 12–24h: +25% of package (min $50; $50/$75/$120)
-- Extra city/radius: $60 (coverage only) or $75–$99 if it increases record count
-- Extra source: $35–$50 per source
-- YouTube/Reddit add-on: $45 (light) or $60 with full tab + summary
-Turnaround, Quality, and Guarantees
-- Turnaround: 24–48h for Starter/Standard; ~48h for Pro (subject to API limits)
-- One included revision for formatting/filters/labels
-- Satisfaction safeguard: if a source fails, I’ll re-run or substitute with clear labeling
-- Clear communication on any field/source limitations upfront
-
 **What I Need From You**
 - Targets: city/state, business keywords, rental/property filters (city/zip/radius), YouTube channels/queries, Reddit topics/subs
 - Sources to include (Google Places, Yelp, YouTube, Reddit, compliant real‑estate APIs/public datasets)
